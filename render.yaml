@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sap-flask-proxy
+    env: python
+    buildCommand: ""
+    startCommand: python sap_proxy_whatsapp.py
+    plan: free
+    envVars:
+      - key: TWILIO_ACCOUNT_SID
+        value: AC3c22ba1b64daf93f1c4ac090d93cc5b1
+      - key: TWILIO_AUTH_TOKEN
+        value: 88b5445833b3e70215e606e1b0979ad1
+      - key: TWILIO_PHONE_NUMBER
+        value: +19478377582
